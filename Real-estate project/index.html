@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Homes Realty</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Dream Homes Realty</h1>
+        <p>Your dream home is just a click away!</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#properties">Properties</a> |
+        <a href="#contact">Contact Us</a> |
+        <a href="#media">Media</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section id="properties">
+        <h2>Available Properties</h2>
+
+        <!-- Table Example -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Property Name</th>
+                    <th>Location</th>
+                    <th>Price</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Luxury Villa</td>
+                    <td>Muthaiga, Kenya</td>
+                    <td>$1,200,000</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Beach House</td>
+                    <td>Kilifi, Kenya</td>
+                    <td>$950,000</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>Urban Apartment</td>
+                    <td>Kilimani, Kenya</td>
+                    <td>$750,000</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <!-- Form Example with Checkboxes, Radio Buttons, and Submit Button -->
+        <form action="submit.html" method="POST">
+            <!-- Text Input -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Radio Buttons Example -->
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes Example -->
+            <label for="interests">Interested in:</label><br>
+            <input type="checkbox" id="buying" name="interest" value="buying">
+            <label for="buying">Buying</label><br>
+            <input type="checkbox" id="renting" name="interest" value="renting">
+            <label for="renting">Renting</label><br><br>
+
+            <!-- Dropdown Selection -->
+            <label for="property">Interested Property:</label>
+            <select id="property" name="property">
+                <option value="luxury-villa">Luxury Villa</option>
+                <option value="beach-house">Beach House</option>
+                <option value="urban-apartment">Urban Apartment</option>
+            </select><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Send Inquiry">
+        </form>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2>Property Media</h2>
+
+        <!-- Image Example -->
+        <h3>Featured Property: Luxury Villa</h3>
+        <img src="https://via.placeholder.com/800x400" alt="Luxury Villa">
+
+        <!-- Video Example -->
+        <h3>Property Tour</h3>
+        <video width="640" height="360" controls loop>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- MP3 Example -->
+        <h3>Property Background Music</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Dream Homes Realty. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
