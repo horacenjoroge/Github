@@ -56,6 +56,32 @@
         <input type="submit" value="Send Inquiry">
     </form>
 
+    <h3>Job Application / Newsletter Subscription</h3>
+    
+    <!-- Job Application / Newsletter Subscription Form -->
+    <form action="submit.html" method="POST">
+        <!-- Text Input for Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <!-- Message / Cover Letter -->
+        <label for="message">Message / Cover Letter:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+        <!-- Radio Buttons for Subscription Type -->
+        <label for="subscription">Subscription Type:</label><br>
+        <input type="radio" id="job-application" name="subscription" value="job-application" checked>
+        <label for="job-application">Job Application</label><br>
+        <input type="radio" id="newsletter" name="subscription" value="newsletter">
+        <label for="newsletter">Newsletter</label><br><br>
+    
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Dream Homes Realty. All rights reserved.</p>
