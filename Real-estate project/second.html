@@ -5,6 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Homes Realty - Properties</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation Section */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #ddd;
+        }
+
+        /* Table Styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        table th,
+        table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +122,7 @@
 
     <!-- Table Example -->
     <h2>Property Listings</h2>
-    <table border="1">
+    <table>
         <thead>
             <tr>
                 <th>Property Name</th>
@@ -54,18 +155,18 @@
 
     <!-- Additional Images -->
     <h3>Featured Properties</h3>
-    <img src="/public/images/villa.jpg" alt="Luxury Villa" width="600"height="500">
+    <img src="/public/images/villa.jpg" alt="Luxury Villa" width="600" height="500">
     <img src="/public/images/beach.jpg" alt="Beach House" width="500">
 
     <!-- More Property Options -->
     <img src="/public/images/apartment.jpg" alt="Urban Apartment" width="500">
 
     <h1>Employee Information and Recent Projects</h1>
-    
+
     <!-- Employee Information Table -->
     <section id="employees">
         <h4>Employee Information</h4>
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                     <th>Employee ID</th>
@@ -78,7 +179,7 @@
             <tbody>
                 <tr>
                     <td>001</td>
-                    <td>Jane harris</td>
+                    <td>Jane Harris</td>
                     <td>Software Engineer</td>
                     <td>Development</td>
                     <td>jane.doe@example.com</td>
@@ -92,7 +193,7 @@
                 </tr>
                 <tr>
                     <td>003</td>
-                    <td>Emily leah </td>
+                    <td>Emily Leah</td>
                     <td>UX Designer</td>
                     <td>Design</td>
                     <td>emily.johnson@example.com</td>
@@ -114,11 +215,11 @@
             </tbody>
         </table>
     </section>
-    
+
     <!-- Recent Projects / Service Offerings Table -->
     <section id="projects">
         <h5>Recent Projects / Service Offerings</h5>
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                     <th>Project ID</th>
@@ -167,7 +268,6 @@
             </tbody>
         </table>
     </section>
-
 
     <!-- Footer Section -->
     <footer>

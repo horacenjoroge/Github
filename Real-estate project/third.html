@@ -5,6 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Homes Realty - Contact Us</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation Section */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form Section */
+        h2,
+        h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,25 +128,25 @@
     <form action="submit.html" method="POST">
         <!-- Text Input -->
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name" required><br>
 
         <!-- Email Input -->
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required><br>
 
         <!-- Radio Buttons Example -->
-        <label for="gender">Gender:</label><br>
+        <label for="gender">Gender:</label>
         <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
+        <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br><br>
+        <label for="female">Female</label><br>
 
         <!-- Checkboxes Example -->
-        <label for="interests">Interested in:</label><br>
+        <label for="interests">Interested in:</label>
         <input type="checkbox" id="buying" name="interest" value="buying">
-        <label for="buying">Buying</label><br>
+        <label for="buying">Buying</label>
         <input type="checkbox" id="renting" name="interest" value="renting">
-        <label for="renting">Renting</label><br><br>
+        <label for="renting">Renting</label><br>
 
         <!-- Dropdown Selection -->
         <label for="property">Interested Property:</label>
@@ -50,38 +154,39 @@
             <option value="luxury-villa">Luxury Villa</option>
             <option value="beach-house">Beach House</option>
             <option value="urban-apartment">Urban Apartment</option>
-        </select><br><br>
+        </select><br>
 
         <!-- Submit Button -->
         <input type="submit" value="Send Inquiry">
     </form>
 
     <h3>Job Application / Newsletter Subscription</h3>
-    
+
     <!-- Job Application / Newsletter Subscription Form -->
     <form action="submit.html" method="POST">
         <!-- Text Input for Name -->
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-    
+        <input type="text" id="name" name="name" required><br>
+
         <!-- Email Input -->
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-    
+        <input type="email" id="email" name="email" required><br>
+
         <!-- Message / Cover Letter -->
-        <label for="message">Message / Cover Letter:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-    
+        <label for="message">Message / Cover Letter:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
         <!-- Radio Buttons for Subscription Type -->
         <label for="subscription">Subscription Type:</label><br>
         <input type="radio" id="job-application" name="subscription" value="job-application" checked>
-        <label for="job-application">Job Application</label><br>
+        <label for="job-application">Job Application</label>
         <input type="radio" id="newsletter" name="subscription" value="newsletter">
-        <label for="newsletter">Newsletter</label><br><br>
-    
+        <label for="newsletter">Newsletter</label><br>
+
         <!-- Submit Button -->
         <input type="submit" value="Submit">
     </form>
+
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Dream Homes Realty. All rights reserved.</p>
