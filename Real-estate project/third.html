@@ -5,191 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Homes Realty - Contact Us</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        /* Header Section */
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        /* Navigation Section */
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Form Section */
-        h2,
-        h3 {
-            text-align: center;
-            color: #333;
-        }
-
-        form {
-            width: 80%;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        input[type="radio"],
-        input[type="checkbox"] {
-            margin-right: 10px;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 15px;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
-        <h1>Contact Dream Homes Realty</h1>
+        <div class="container">
+            <h1>Contact Dream Homes Realty</h1>
+        </div>
     </header>
 
     <!-- Navigation Section -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="second.html">Properties</a>
+        <div class="container">
+            <a href="index.html">Home</a> |
+            <a href="second.html">Properties</a>
+        </div>
     </nav>
 
-    <!-- Form Example -->
-    <h2>Send Us Your Inquiry</h2>
-    <form action="submit.html" method="POST">
-        <!-- Text Input -->
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required><br>
+    <!-- Main Content Section -->
+    <section id="main-content">
+        <div class="container">
+            <!-- Inquiry Form Section -->
+            <section id="inquiry-form">
+                <h2>Send Us Your Inquiry</h2>
+                <form action="submit.html" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-        <!-- Email Input -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-        <!-- Radio Buttons Example -->
-        <label for="gender">Gender:</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
 
-        <!-- Checkboxes Example -->
-        <label for="interests">Interested in:</label>
-        <input type="checkbox" id="buying" name="interest" value="buying">
-        <label for="buying">Buying</label>
-        <input type="checkbox" id="renting" name="interest" value="renting">
-        <label for="renting">Renting</label><br>
+                    <div class="form-group">
+                        <label for="interests">Interested in:</label>
+                        <input type="checkbox" id="buying" name="interest" value="buying">
+                        <label for="buying">Buying</label>
+                        <input type="checkbox" id="renting" name="interest" value="renting">
+                        <label for="renting">Renting</label>
+                    </div>
 
-        <!-- Dropdown Selection -->
-        <label for="property">Interested Property:</label>
-        <select id="property" name="property">
-            <option value="luxury-villa">Luxury Villa</option>
-            <option value="beach-house">Beach House</option>
-            <option value="urban-apartment">Urban Apartment</option>
-        </select><br>
+                    <div class="form-group">
+                        <label for="property">Interested Property:</label>
+                        <select id="property" name="property">
+                            <option value="luxury-villa">Luxury Villa</option>
+                            <option value="beach-house">Beach House</option>
+                            <option value="urban-apartment">Urban Apartment</option>
+                        </select>
+                    </div>
 
-        <!-- Submit Button -->
-        <input type="submit" value="Send Inquiry">
-    </form>
+                    <div class="form-group">
+                        <input type="submit" value="Send Inquiry">
+                    </div>
+                </form>
+            </section>
 
-    <h3>Job Application / Newsletter Subscription</h3>
+            <!-- Job Application/Newsletter Form Section -->
+            <section id="job-newsletter-form">
+                <h3>Job Application / Newsletter Subscription</h3>
+                <form action="submit.html" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-    <!-- Job Application / Newsletter Subscription Form -->
-    <form action="submit.html" method="POST">
-        <!-- Text Input for Name -->
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required><br>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-        <!-- Email Input -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+                    <div class="form-group">
+                        <label for="message">Message / Cover Letter:</label>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                    </div>
 
-        <!-- Message / Cover Letter -->
-        <label for="message">Message / Cover Letter:</label>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                    <div class="form-group">
+                        <label for="subscription">Subscription Type:</label><br>
+                        <input type="radio" id="job-application" name="subscription" value="job-application" checked>
+                        <label for="job-application">Job Application</label>
+                        <input type="radio" id="newsletter" name="subscription" value="newsletter">
+                        <label for="newsletter">Newsletter</label>
+                    </div>
 
-        <!-- Radio Buttons for Subscription Type -->
-        <label for="subscription">Subscription Type:</label><br>
-        <input type="radio" id="job-application" name="subscription" value="job-application" checked>
-        <label for="job-application">Job Application</label>
-        <input type="radio" id="newsletter" name="subscription" value="newsletter">
-        <label for="newsletter">Newsletter</label><br>
-
-        <!-- Submit Button -->
-        <input type="submit" value="Submit">
-    </form>
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </section>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Dream Homes Realty. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
 </body>
 

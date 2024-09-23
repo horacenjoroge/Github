@@ -5,96 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Homes Realty - Home</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        /* Header Section */
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2rem;
-        }
-
-        /* Navigation Styles */
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Main Content */
-        h2,
-        h3,
-        h4 {
-            color: #333;
-            text-align: center;
-        }
-
-        h2 {
-            margin-top: 20px;
-        }
-
-        p {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #666;
-        }
-
-        img {
-            display: block;
-            margin: 20px auto;
-            border: 5px solid #ddd;
-        }
-
-        /* Video Section */
-        video {
-            display: block;
-            margin: 20px auto;
-            border: 5px solid #ddd;
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -110,31 +24,62 @@
         <a href="third.html">Contact Us</a>
     </nav>
 
-    <!-- Image Example -->
-    <h2>Welcome to Dream Homes Realty</h2>
-    <p>Find your dream property with us.</p>
-    <img src="/public/images/dream.jpg" alt="Dream Home" width="500">
+    <!-- Image Example with Intro Message -->
+    <section class="image-content">
+        <img src="/public/images/dream.jpg" alt="Dream Home" width="500">
+        <div class="intro-message">
+            <h2>Welcome to Dream Homes Realty</h2>
+            <p>At Dream Homes Realty, we offer a wide range of dream properties that cater to all tastes and
+                preferences. Whether you're looking for a luxury villa or a cozy urban apartment, your perfect home is
+                within reach!</p>
+        </div>
+    </section>
 
-    <!-- Additional Image -->
-    <h3>Our Office</h3>
-    <img src="/public/images/office.jpg" alt="Office Building" width="500">
+    <!-- Office Section with Intro Message -->
+    <section class="image-content">
+        <img src="/public/images/office.jpg" alt="Office Building" width="500">
+        <div class="intro-message">
+            <h3>Our Office</h3>
+            <p>Our headquarters are located in the heart of Nairobi. We ensure professional service with a dedicated
+                team available to assist you in finding your dream home.</p>
+        </div>
+    </section>
 
-    <!-- Video Example -->
-    <h3>Company Introduction</h3>
-    <video width="640" height="360" controls>
-        <source src="/public/videos/inro.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <!-- Video Section with Intro Message -->
+    <section class="video-content">
+        <video width="640" height="360" controls>
+            <source src="/public/videos/inro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="intro-message">
+            <h3>Company Introduction</h3>
+            <p>Learn more about Dream Homes Realty and how we've helped countless clients find the perfect property for
+                their needs. Discover our history, values, and commitment to excellence.</p>
+        </div>
+    </section>
 
-    <h4>Company Projects</h4>
-    <video width="640" height="360" controls>
-        <source src="/public/videos/project.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <!-- Projects Video Section with Intro Message -->
+    <section class="video-content">
+        <video width="640" height="360" controls>
+            <source src="/public/videos/project.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="intro-message">
+            <h4>Company Projects</h4>
+            <p>Take a closer look at some of our latest projects, ranging from luxurious beachfront homes to
+                state-of-the-art urban apartments. Our projects are tailored to meet the unique demands of our clients.
+            </p>
+        </div>
+    </section>
 
-    <!-- Footer Section -->
+    <!-- Footer Section with Social Media Icons -->
     <footer>
         <p>&copy; 2024 Dream Homes Realty. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
 </body>
 
