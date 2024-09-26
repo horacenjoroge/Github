@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form and Button Overview</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2>Bootstrap Form Example</h2>
+
+        <!-- Form Section -->
+        <form>
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control is-invalid" id="name" placeholder="Enter your name" required>
+                <div class="invalid-feedback">Please provide a valid name.</div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control is-valid" id="email" placeholder="Enter email" required>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                <div class="invalid-feedback">Please enter a password.</div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <hr>
+
+        <!-- Button Overview Section -->
+        <h2>Bootstrap Button Overview</h2>
+
+        <!-- Button Variants -->
+        <h4>Button Variants</h4>
+        <!-- Primary Button: This is the default blue button used to indicate the main action -->
+        <button type="button" class="btn btn-primary">Primary</button>
+
+        <!-- Secondary Button: A gray button used for less important actions -->
+        <button type="button" class="btn btn-secondary">Secondary</button>
+
+        <!-- Success Button: A green button often used for success messages or confirmations -->
+        <button type="button" class="btn btn-success">Success</button>
+
+        <!-- Danger Button: A red button used to indicate critical actions like deleting something -->
+        <button type="button" class="btn btn-danger">Danger</button>
+
+        <!-- Warning Button: A yellow button used to caution the user -->
+        <button type="button" class="btn btn-warning">Warning</button>
+
+        <!-- Info Button: A light blue button used to share information -->
+        <button type="button" class="btn btn-info">Info</button>
+
+        <!-- Light Button: A light, neutral button for non-critical actions -->
+        <button type="button" class="btn btn-light">Light</button>
+
+        <!-- Dark Button: A black or dark gray button used for bold actions -->
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <!-- Link Button: This is styled to look like a hyperlink but still behaves like a button -->
+        <button type="button" class="btn btn-link">Link</button>
+
+        <hr>
+
+        <!-- Outline Buttons -->
+        <h4>Outline Buttons</h4>
+        <!-- Outline Buttons: These are similar to regular buttons but only have a colored border -->
+        <!-- Primary Outline Button -->
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+
+        <!-- Secondary Outline Button -->
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+
+        <!-- Success Outline Button -->
+        <button type="button" class="btn btn-outline-success">Success</button>
+
+        <!-- Danger Outline Button -->
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+
+        <!-- Warning Outline Button -->
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+
+        <!-- Info Outline Button -->
+        <button type="button" class="btn btn-outline-info">Info</button>
+
+        <!-- Dark Outline Button -->
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+
+        <hr>
+
+        <!-- Button Sizes -->
+        <h4>Button Sizes</h4>
+        <!-- Large Button: This button is larger and used for high-visibility actions -->
+        <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+
+        <!-- Small Button: This button is smaller and used for less significant actions -->
+        <button type="button" class="btn btn-secondary btn-sm">Small Button</button>
+
+        <hr>
+
+        <!-- Block Level Buttons -->
+        <h4>Block Level Button</h4>
+        <!-- Block Button: This button takes up the entire width of its container -->
+        <button type="button" class="btn btn-success btn-block">Block Button</button>
+
+        <hr>
+
+        <!-- Disabled and Active Buttons -->
+        <h4>Disabled and Active Buttons</h4>
+        <!-- Disabled Button: This button is inactive and cannot be clicked -->
+        <button type="button" class="btn btn-primary" disabled>Disabled Button</button>
+
+        <!-- Active Button: This button looks like it’s pressed down -->
+        <button type="button" class="btn btn-danger active">Active Button</button>
+
+    </div>
+
+    <!-- Bootstrap JS CDN and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
