@@ -4,133 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Form and Button Overview</title>
-    <!-- Bootstrap CSS CDN -->
+    <title>Bootstrap Form and Button Customization</title>
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom Button Styles */
+        .btn-custom {
+            background-color: #4CAF50;
+            /* Green */
+            border-color: #45A049;
+            /* Darker green */
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #45A049;
+        }
+
+        .btn-rounded {
+            border-radius: 50px;
+        }
+
+        .btn-custom-size {
+            padding: 10px 40px;
+            font-size: 1.2rem;
+        }
+
+        .btn-hover-custom:hover {
+            background-color: #FF6347;
+            /* Tomato */
+            border-color: #FF4500;
+            /* Red */
+        }
+
+        .btn-active-custom:active {
+            background-color: #DC143C;
+            /* Crimson */
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="container mt-5">
         <h2>Bootstrap Form Example</h2>
-
-        <!-- Form Section -->
         <form>
-            <!-- Name Field -->
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control is-invalid" id="name" placeholder="Enter your name" required>
-                <div class="invalid-feedback">Please provide a valid name.</div>
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
             </div>
-
-            <!-- Email Field -->
             <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control is-valid" id="email" placeholder="Enter email" required>
-                <div class="valid-feedback">Looks good!</div>
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
             </div>
-
-            <!-- Password Field -->
             <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password" required>
-                <div class="invalid-feedback">Please enter a password.</div>
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
             </div>
-
-            <!-- Submit Button -->
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
 
         <hr>
 
-        <!-- Button Overview Section -->
         <h2>Bootstrap Button Overview</h2>
 
-        <!-- Button Variants -->
-        <h4>Button Variants</h4>
-        <!-- Primary Button: This is the default blue button used to indicate the main action -->
-        <button type="button" class="btn btn-primary">Primary</button>
+        <!-- Basic Bootstrap Buttons -->
+        <button type="button" class="btn btn-primary">Primary Button</button>
+        <p>The default Bootstrap <code>btn-primary</code> button with blue background and white text.</p>
 
-        <!-- Secondary Button: A gray button used for less important actions -->
-        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-secondary">Secondary Button</button>
+        <p>This is the default <code>btn-secondary</code> button with gray background and white text.</p>
 
-        <!-- Success Button: A green button often used for success messages or confirmations -->
-        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-success">Success Button</button>
+        <p>The <code>btn-success</code> button with a green background indicating a positive action like "Submit".</p>
 
-        <!-- Danger Button: A red button used to indicate critical actions like deleting something -->
-        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-danger">Danger Button</button>
+        <p>This <code>btn-danger</code> button with a red background is used to signify potentially dangerous actions.
+        </p>
 
-        <!-- Warning Button: A yellow button used to caution the user -->
-        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-warning">Warning Button</button>
+        <p>The <code>btn-warning</code> button has a yellow background for cautionary actions or alerts.</p>
 
-        <!-- Info Button: A light blue button used to share information -->
-        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-info">Info Button</button>
+        <p>The <code>btn-info</code> button has a light blue background for informational purposes.</p>
 
-        <!-- Light Button: A light, neutral button for non-critical actions -->
-        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-light">Light Button</button>
+        <p>The <code>btn-light</code> button with a white background and dark text for less emphasis.</p>
 
-        <!-- Dark Button: A black or dark gray button used for bold actions -->
-        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-dark">Dark Button</button>
+        <p>This <code>btn-dark</code> button has a black background for strong emphasis actions.</p>
 
-        <!-- Link Button: This is styled to look like a hyperlink but still behaves like a button -->
-        <button type="button" class="btn btn-link">Link</button>
+        <!-- Custom Button Examples -->
+        <h2>Custom Bootstrap Buttons</h2>
 
-        <hr>
+        <!-- Primary Button with Custom Color -->
+        <button type="button" class="btn btn-custom">Custom Green Button</button>
+        <p><strong>Customization:</strong> This button has a custom green background color (#4CAF50) and border, with a
+            darker shade of green on hover. This is achieved by overriding Bootstrap's default button styles.</p>
 
-        <!-- Outline Buttons -->
-        <h4>Outline Buttons</h4>
-        <!-- Outline Buttons: These are similar to regular buttons but only have a colored border -->
-        <!-- Primary Outline Button -->
-        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <!-- Rounded Button -->
+        <button type="button" class="btn btn-info btn-rounded">Rounded Button</button>
+        <p><strong>Customization:</strong> The corners of this button are rounded by applying a high
+            <code>border-radius: 50px;</code> to create a pill-shaped button.</p>
 
-        <!-- Secondary Outline Button -->
-        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <!-- Custom Size Button -->
+        <button type="button" class="btn btn-success btn-custom-size">Custom Size Button</button>
+        <p><strong>Customization:</strong> This button has extra padding (<code>padding: 10px 40px;</code>) and a larger
+            font size (<code>font-size: 1.2rem;</code>) for emphasis.</p>
 
-        <!-- Success Outline Button -->
-        <button type="button" class="btn btn-outline-success">Success</button>
+        <!-- Button with Hover and Active States -->
+        <button type="button" class="btn btn-primary btn-hover-custom btn-active-custom">Hover & Active Custom
+            Button</button>
+        <p><strong>Customization:</strong> This button changes color to tomato (#FF6347) when hovered over and to
+            crimson (#DC143C) when clicked or active.</p>
 
-        <!-- Danger Outline Button -->
-        <button type="button" class="btn btn-outline-danger">Danger</button>
-
-        <!-- Warning Outline Button -->
-        <button type="button" class="btn btn-outline-warning">Warning</button>
-
-        <!-- Info Outline Button -->
-        <button type="button" class="btn btn-outline-info">Info</button>
-
-        <!-- Dark Outline Button -->
-        <button type="button" class="btn btn-outline-dark">Dark</button>
-
-        <hr>
-
-        <!-- Button Sizes -->
-        <h4>Button Sizes</h4>
-        <!-- Large Button: This button is larger and used for high-visibility actions -->
+        <!-- Large Button -->
         <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+        <p><strong>Bootstrap Feature:</strong> The <code>btn-lg</code> class enlarges this button compared to the
+            default size, making it suitable for prominent actions.</p>
 
-        <!-- Small Button: This button is smaller and used for less significant actions -->
-        <button type="button" class="btn btn-secondary btn-sm">Small Button</button>
-
-        <hr>
-
-        <!-- Block Level Buttons -->
-        <h4>Block Level Button</h4>
-        <!-- Block Button: This button takes up the entire width of its container -->
-        <button type="button" class="btn btn-success btn-block">Block Button</button>
-
-        <hr>
-
-        <!-- Disabled and Active Buttons -->
-        <h4>Disabled and Active Buttons</h4>
-        <!-- Disabled Button: This button is inactive and cannot be clicked -->
-        <button type="button" class="btn btn-primary" disabled>Disabled Button</button>
-
-        <!-- Active Button: This button looks like it’s pressed down -->
-        <button type="button" class="btn btn-danger active">Active Button</button>
+        <!-- Button with Icon -->
+        <button type="button" class="btn btn-warning">
+            <i class="fas fa-check"></i> Submit
+        </button>
+        <p><strong>Bootstrap and FontAwesome:</strong> This button includes a checkmark icon using FontAwesome to
+            enhance the visual appeal and clarify its action.</p>
 
     </div>
 
-    <!-- Bootstrap JS CDN and Dependencies -->
+    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
