@@ -5,120 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Homes Realty - Contact Us</title>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Font Awesome CDN for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="container">
+    <header class="bg-light py-3 mb-4">
+        <div class="container text-center">
             <h1>Contact Dream Homes Realty</h1>
         </div>
     </header>
 
     <!-- Navigation Section -->
-    <nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
         <div class="container">
-            <a href="index.html">Home</a> |
-            <a href="second.html">Properties</a>
+            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="second.html">Properties</a>
         </div>
     </nav>
 
     <!-- Main Content Section -->
-    <section id="main-content">
-        <div class="container">
+    <section id="main-content" class="container">
+        <div class="row">
             <!-- Inquiry Form Section -->
-            <section id="inquiry-form">
+            <div class="col-md-6 mb-4">
                 <h2>Send Us Your Inquiry</h2>
-                <form action="submit.html" method="POST">
-                    <div class="form-group">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required>
+                <form action="submit.html" method="POST" class="p-3 border rounded">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
                     </div>
 
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
                     </div>
 
-                    <div class="form-group">
-                        <label for="gender">Gender:</label>
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label>
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
+                    <div class="mb-3">
+                        <label class="form-label">Gender:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="male" name="gender" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="interests">Interested in:</label>
-                        <input type="checkbox" id="buying" name="interest" value="buying">
-                        <label for="buying">Buying</label>
-                        <input type="checkbox" id="renting" name="interest" value="renting">
-                        <label for="renting">Renting</label>
+                    <div class="mb-3">
+                        <label for="interests" class="form-label">Interested in:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="buying" name="interest" value="buying">
+                            <label class="form-check-label" for="buying">Buying</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="renting" name="interest"
+                                value="renting">
+                            <label class="form-check-label" for="renting">Renting</label>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="property">Interested Property:</label>
-                        <select id="property" name="property">
+                    <div class="mb-3">
+                        <label for="property" class="form-label">Interested Property:</label>
+                        <select id="property" name="property" class="form-select">
                             <option value="luxury-villa">Luxury Villa</option>
                             <option value="beach-house">Beach House</option>
                             <option value="urban-apartment">Urban Apartment</option>
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <input type="submit" value="Send Inquiry">
-                    </div>
+                    <button type="submit" class="btn btn-primary">Send Inquiry</button>
                 </form>
-            </section>
+            </div>
 
             <!-- Job Application/Newsletter Form Section -->
-            <section id="job-newsletter-form">
+            <div class="col-md-6 mb-4">
                 <h3>Job Application / Newsletter Subscription</h3>
-                <form action="submit.html" method="POST">
-                    <div class="form-group">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required>
+                <form action="submit.html" method="POST" class="p-3 border rounded">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
                     </div>
 
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
                     </div>
 
-                    <div class="form-group">
-                        <label for="message">Message / Cover Letter:</label>
-                        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message / Cover Letter:</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
                     </div>
 
-                    <div class="form-group">
-                        <label for="subscription">Subscription Type:</label><br>
-                        <input type="radio" id="job-application" name="subscription" value="job-application" checked>
-                        <label for="job-application">Job Application</label>
-                        <input type="radio" id="newsletter" name="subscription" value="newsletter">
-                        <label for="newsletter">Newsletter</label>
+                    <div class="mb-3">
+                        <label class="form-label">Subscription Type:</label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="job-application" name="subscription"
+                                value="job-application" checked>
+                            <label class="form-check-label" for="job-application">Job Application</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="newsletter" name="subscription"
+                                value="newsletter">
+                            <label class="form-check-label" for="newsletter">Newsletter</label>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <input type="submit" value="Submit">
-                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </form>
-            </section>
+            </div>
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer>
+    <footer class="bg-light py-3 mt-4 text-center">
         <p>&copy; 2024 Dream Homes Realty. All rights reserved.</p>
         <div class="social-media">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
+
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

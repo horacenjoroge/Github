@@ -1,198 +1,87 @@
+/* combined.css */
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}
-
-/* Header Section */
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-}
-
-/* Navigation Section */
-nav {
-    background-color: #333;
-    text-align: center;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content */
-h2,
-h3,
-h4,
-h5 {
-    color: #333;
-    text-align: center;
-}
-
-h2 {
-    margin-top: 20px;
-}
-
-/* Image and Text Alignment for Index and Third Pages */
-.image-text-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    width: 80%;
-}
-
-.image-text-container img {
-    max-width: 300px;
-    height: auto;
-    margin-right: 20px;
-    border: 5px solid #ddd;
-}
-
-.image-text-container .text {
-    max-width: 500px;
-}
-
-/* Grid Layout for Featured Properties on Second Page */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     padding: 20px;
 }
 
-.grid-item {
+/* Header Styles */
+header {
+    background-color: #e9e9ef;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.card-img-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+/* Table Styles */
+.table {
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
     text-align: center;
 }
 
-.grid-item img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    border: 5px solid #ddd;
-}
-
-/* Table Styling for Listings on Second Page */
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    text-align: left;
-    font-size: 1rem;
-}
-
-table th,
-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-table th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-table tbody tr:nth-child(even) {
+.table-striped tbody tr:nth-of-type(odd) {
     background-color: #f2f2f2;
 }
 
-table tbody tr:hover {
-    background-color: #f5f5f5;
+/* Form Styles */
+#main-content {
+    margin-top: 20px;
 }
 
-/* Footer Section */
-footer {
-    background-color: #333;
+h2,
+h3 {
+    color: #343a40;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control,
+.form-select {
+    border-radius: 0.25rem;
+}
+
+/* Footer Styles */
+footer,
+.footer {
+    background-color: #343a40;
     color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-.social-media {
-    margin-top: 10px;
+    padding: 10px 0;
 }
 
 .social-media a {
     color: white;
-    text-decoration: none;
-    margin: 0 10px;
+    font-size: 1.5rem;
 }
 
-social-media a:hover {
-    text-decoration: underline;
+.social-media a:hover {
+    color: #007bff;
 }
 
-/* Form Section for Third Page */
-form {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    width: 80%;
-    margin: 20px auto;
-}
-
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* Job Application / Newsletter Form Specific to Third Page */
-#job-newsletter-form {
-    margin-top: 30px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
 }
