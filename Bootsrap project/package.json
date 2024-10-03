@@ -1,7 +1,7 @@
 {
   "name": "A fictional campsites review website.",
   "version": "1.0.0",
-  "main": "index.js",
+  
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
