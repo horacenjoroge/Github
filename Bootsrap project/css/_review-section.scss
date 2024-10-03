@@ -1,0 +1,25 @@
+@mixin review-section() {
+    background: beige;
+    // Add more CSS rules here if you'd like
+}
+
+.review-section {
+    @include review-section;
+    // Add more CSS rules here if you'd like
+}
+
+%campsite-btn {
+    background: #0dcaf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 60%;
+}
+
+.campsite-btn {
+    @extend %campsite-btn;
+    // Add more CSS rules here if you'd like
+}
+
