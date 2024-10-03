@@ -11,29 +11,59 @@
 
     <!-- Font Awesome CDN for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+
 </head>
 
 <body>
 
-    <!-- Navigation Section with Logo and Hamburger Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/public/images/logo.jpg" alt="Logo" width="30" height="30"
-                    class="d-inline-block align-text-top">
-                Dream Homes Realty
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-3 col-md-2 align-self-center">
+                    <img src="/public/images/logo.jpg" class="img-fluid" alt="logo" />
+                </div>
+                <div class="col">
+                    <h1>Dreams Homes Realty</h1>
+                    <h2>a better way to camp</h2>
+                </div>
+                <div class="col-auto ms-auto mt-4"> <!-- Button Column -->
+                    <a href="third.html" class="btn btn-info btn-lg text-white">Reserve Property</a> <!-- Button -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/public/images/logo.jpg" height="40" width="40" /></a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="RealtyNavbar">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="second.html">Properties</a>
+                        <a class="nav-link active" href="#">
+                            <i class="fa-solid fa-house fa-lg"></i> Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="third.html">Contact Us</a>
+                        <a class="nav-link" href="second.html">
+                            <i class="fa-solid fa-info fa-lg"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-list fa-lg"></i> Sites
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="third.html">
+                            <i class="fa-solid fa-address-card fa-lg"></i> Contact
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -49,59 +79,66 @@
         </ol>
     </nav>
 
-    <!-- Image Example with Intro Message in Bootstrap Card -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="card mb-4">
-                    <img src="/public/images/dream.jpg" class="card-img-top" alt="Dream Home">
-                    <div class="card-body">
-                        <h5 class="card-title">Welcome to Dream Homes Realty</h5>
-                        <p class="card-text">At Dream Homes Realty, we offer a wide range of dream properties that cater
-                            to all tastes and preferences. Whether you're looking for a luxury villa or a cozy urban
-                            apartment, your perfect home is within reach!</p>
-                    </div>
+<!-- Bootstrap Carousel for Images and Video -->
+<div id="dreamCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- First Slide: Dream Home Image -->
+        <div class="carousel-item active">
+            <div class="card mb-4">
+                <img src="/public/images/dream.jpg" class="card-img-top img-fluid" alt="Dream Home"
+                    style="width:100%; height:400px; object-fit:cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Welcome to Dream Homes Realty</h5>
+                    <p class="card-text">At Dream Homes Realty, we offer a wide range of dream properties that cater
+                        to all tastes and preferences. Whether you're looking for a luxury villa or a cozy urban
+                        apartment, your perfect home is within reach!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Slide: Office Image -->
+        <div class="carousel-item">
+            <div class="card mb-4">
+                <img src="/public/images/office.jpg" class="card-img-top img-fluid" alt="Office Building"
+                    style="width:100%; height:400px; object-fit:cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Our Office</h5>
+                    <p class="card-text">Our headquarters are located in the heart of Nairobi. We ensure
+                        professional service with a dedicated team available to assist you in finding your dream
+                        home.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Slide: Video -->
+        <div class="carousel-item">
+            <div class="card mb-4">
+                <video class="card-img-top" width="100%" height="400" controls style="object-fit:cover;">
+                    <source src="/public/videos/inro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-body">
+                    <h5 class="card-title">Company Introduction</h5>
+                    <p class="card-text">Learn more about Dream Homes Realty and how we've helped countless clients
+                        find the perfect property for their needs. Discover our history, values, and commitment to
+                        excellence.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Office Section with Intro Message in Bootstrap Card -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="card mb-4">
-                    <img src="/public/images/office.jpg" class="card-img-top" alt="Office Building">
-                    <div class="card-body">
-                        <h5 class="card-title">Our Office</h5>
-                        <p class="card-text">Our headquarters are located in the heart of Nairobi. We ensure
-                            professional service with a dedicated team available to assist you in finding your dream
-                            home.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#dreamCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#dreamCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
-    <!-- Video Section -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="card mb-4">
-                    <video class="card-img-top" width="640" height="360" controls>
-                        <source src="/public/videos/inro.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body">
-                        <h5 class="card-title">Company Introduction</h5>
-                        <p class="card-text">Learn more about Dream Homes Realty and how we've helped countless clients
-                            find the perfect property for their needs. Discover our history, values, and commitment to
-                            excellence.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Property Listings Table -->
     <div class="container">
