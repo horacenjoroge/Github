@@ -15,7 +15,7 @@ h2 {
 header {
     padding: 30px;
     background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
-    color: white;
+    color: rgb(50, 95, 18);
 }
 
 header h2 {
@@ -35,4 +35,16 @@ footer {
 
 .navbar {
     background-color: #901CAD;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    border: solid #5637DD;
+}
+
+.accordion-button {
+    background-color: #d3d3d3;
 }
