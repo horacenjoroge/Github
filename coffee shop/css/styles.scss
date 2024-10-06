@@ -1,0 +1,53 @@
+$color-primary: #734B5E;
+$color-secondary: #BCBDC0;
+$color-pale: #CEC8FF;
+$color-mid: #565857;
+$color-dark: #8A8D91;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-teal: #F5D3C8;
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Lobster", cursive;
+
+body {
+    font-family: $body-font;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $header-font;
+}
+
+h2 {
+    color: $color-primary;
+}
+
+header {
+    h2 {
+        color: $color-pale;
+    }
+}
+
+footer {
+    background-image: linear-gradient($color-pale, white);
+    padding: 20px 0;
+}
+
+header {
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
+    color: white;
+}
+
+.navbar {
+    background-color: $color-mid;
+}
+
+.carousel {
+    border: solid $color-secondary;
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
+}

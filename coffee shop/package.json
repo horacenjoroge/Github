@@ -1,0 +1,20 @@
+{
+  "name": "coffee-shop",
+  "version": "1.0.0",
+  "description": "",
+  
+  "scripts": {
+     "start": "parcel index.html",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Horace",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
