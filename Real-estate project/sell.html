@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Homes Realty - Properties</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css"> <!-- Link to your main CSS file -->
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-4">
+                    <img src="/public/images/logo.jpg" class="img-fluid" alt="Dream Homes Realty Logo" />
+                </div>
+                <div class="col-md-8 text-center">
+                    <h1>Dream Homes Realty</h1>
+                    <h2>Your Gateway to Dream Properties</h2>
+                </div>
+                <div class="col-auto mt-4">
+                    <a href="third.html" class="btn btn-info btn-lg text-white">Reserve Property</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/public/images/logo.jpg" height="40" width="40" alt="Logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#RealtyNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="RealtyNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fa-solid fa-shopping-cart fa-lg"></i> Buy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sell.html"><i class="fa-solid fa-tags fa-lg"></i> Sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rent.html"><i class="fa-solid fa-home fa-lg"></i> Rent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mortage.html"><i class="fa-solid fa-hand-holding-usd fa-lg"></i> Mortgage</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs Section -->
+    <nav aria-label="breadcrumb" class="bg-light p-3">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="sell.html"><i class="fa-solid fa-tags fa-lg"></i> sell</a></li>
+                <li class="breadcrumb-item"><a href="rent.html"><i class="fa-solid fa-home fa-lg"></i> rent</a></li>
+                <li class="breadcrumb-item"><a href="mortage.html"><i class="fa-solid fa-hand-holding-usd fa-lg"></i>
+                        Mortgage</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">List Your Property</h2>
+    
+        <form class="needs-validation" novalidate>
+            <div class="accordion" id="listingAccordion">
+                <!-- Basic Information -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="basicInfo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseBasic">
+                            Basic Information
+                        </button>
+                    </h2>
+                    <div id="collapseBasic" class="accordion-collapse collapse show" data-bs-parent="#listingAccordion">
+                        <div class="accordion-body">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="propertyType" class="form-label">Property Type</label>
+                                    <select class="form-select" id="propertyType" required>
+                                        <option value="">Choose...</option>
+                                        <option>House</option>
+                                        <option>Apartment</option>
+                                        <option>Land</option>
+                                        <option>Commercial</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="price" class="form-label">Price (KSH)</label>
+                                    <input type="number" class="form-control" id="price" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Location Details -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="locationInfo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLocation">
+                            Location Details
+                        </button>
+                    </h2>
+                    <div id="collapseLocation" class="accordion-collapse collapse" data-bs-parent="#listingAccordion">
+                        <div class="accordion-body">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Street Address</label>
+                                    <input type="text" class="form-control" id="address" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="county" class="form-label">County</label>
+                                    <input type="text" class="form-control" id="county" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="postalCode" class="form-label">Postal Code</label>
+                                    <input type="text" class="form-control" id="postalCode">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Property Details -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="detailsInfo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseDetails">
+                            Property Details
+                        </button>
+                    </h2>
+                    <div id="collapseDetails" class="accordion-collapse collapse" data-bs-parent="#listingAccordion">
+                        <div class="accordion-body">
+                            <div class="row g-3">
+                                <div class="col-md-3">
+                                    <label for="bedrooms" class="form-label">Bedrooms</label>
+                                    <input type="number" class="form-control" id="bedrooms">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="bathrooms" class="form-label">Bathrooms</label>
+                                    <input type="number" class="form-control" id="bathrooms">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="area" class="form-label">Area (sq ft)</label>
+                                    <input type="number" class="form-control" id="area">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="yearBuilt" class="form-label">Year Built</label>
+                                    <input type="number" class="form-control" id="yearBuilt">
+                                </div>
+                                <div class="col-12">
+                                    <label for="description" class="form-label">Description</label>
+                                    <textarea class="form-control" id="description" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Seller Information -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="sellerInfo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeller">
+                            Seller Information
+                        </button>
+                    </h2>
+                    <div id="collapseSeller" class="accordion-collapse collapse" data-bs-parent="#listingAccordion">
+                        <div class="accordion-body">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="sellerName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="sellerName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="kraPin" class="form-label">KRA PIN</label>
+                                    <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip"
+                                        title="Your KRA PIN is required for tax purposes">
+                                        <input type="text" class="form-control" id="kraPin" required>
+                                    </span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Image Upload -->
+            <div class="mt-4">
+                <label for="propertyImages" class="form-label">Upload Property Images</label>
+                <input type="file" class="form-control" id="propertyImages" multiple accept="image/*" required>
+                <div class="form-text">You can upload multiple images. First image will be the main listing image.</div>
+            </div>
+    
+            <button class="btn btn-primary mt-4" type="submit">Submit Listing</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Dream Homes Realty</h5>
+                    <p class="mb-3">Making your dream home a reality since 1990. Trusted by over 10,000 happy homeowners
+                        across Kenya.</p>
+                    <div class="social-media mb-3">
+                        <a href="#" class="text-light me-3" data-bs-toggle="tooltip" title="Follow us on Facebook">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-light me-3" data-bs-toggle="tooltip" title="Follow us on Twitter">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-light me-3" data-bs-toggle="tooltip" title="Follow us on Instagram">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-light" data-bs-toggle="tooltip" title="Connect on LinkedIn">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Properties</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Agents</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Services -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Buy Property</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Sell Property</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Rent Property</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Property Management</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Consultation</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            123 Realtor Plaza, Westlands, Nairobi
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+254123456789" class="text-light text-decoration-none">+254 123 456 789</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:info@dreamhomes.co.ke"
+                                class="text-light text-decoration-none">info@dreamhomes.co.ke</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-clock me-2"></i>
+                            Mon - Sat: 9:00 AM - 6:00 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Newsletter Signup -->
+            <div class="row mt-4">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="card bg-secondary">
+                        <div class="card-body text-center py-4">
+                            <h5 class="card-title">Subscribe to Our Newsletter</h5>
+                            <p class="card-text mb-3">Stay updated with the latest property listings and real estate news.
+                            </p>
+                            <form class="d-flex justify-content-center">
+                                <div class="input-group mb-3" style="max-width: 500px;">
+                                    <input type="email" class="form-control" placeholder="Enter your email"
+                                        aria-label="Email address" required>
+                                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Bottom Footer -->
+            <div class="row mt-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Dream Homes Realty. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Terms of
+                                Service</a></li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+    
+    </html>

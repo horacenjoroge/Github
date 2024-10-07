@@ -1,16 +1,62 @@
-/* combined.css */
-
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #7E7F9A;
     margin: 0;
     padding: 20px;
 }
 
-/* Header Styles */
 header {
-    background-color: #e9e9ef;
+    background-color: rgba(8, 0, 0, 0.9);
+    /* Semi-transparent white */
+    padding: 20px 0;
+    position: relative;
+    /* For inner positioning */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+
+header img {
+    max-width: 100%;
+    /* Responsive image */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    /* Stylish font for branding */
+    font-size: 2.5rem;
+    /* Prominent size */
+    margin-bottom: 0.5rem;
+    /* Space below */
+    color: #333;
+    /* Dark contrast */
+}
+
+header h2 {
+    font-family: 'Open Sans', sans-serif;
+    /* Clean font */
+    font-size: 1.5rem;
+    /* Slightly smaller */
+    font-weight: 300;
+    /* Light weight */
+    color: #666;
+    /* Lighter text */
+}
+
+.btn {
+    background-color: #007bff;
+    /* Primary color */
+    border-color: #007bff;
+    /* Match border color */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+    border-color: #0056b3;
+    /* Match border */
 }
 
 /* Navbar Styles */
@@ -41,6 +87,7 @@ header {
 
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: #f2f2f2;
+    /* Striped background */
 }
 
 /* Form Styles */
@@ -60,28 +107,55 @@ h3 {
 .form-control,
 .form-select {
     border-radius: 0.25rem;
+    /* Rounded corners */
 }
 
 /* Footer Styles */
-footer,
-.footer {
-    background-color: #343a40;
-    color: white;
-    padding: 10px 0;
-}
-
 .social-media a {
-    color: white;
-    font-size: 1.5rem;
+    font-size: 24px;
+    color: #333;
+    /* Default color */
 }
 
 .social-media a:hover {
     color: #007bff;
+    /* Hover color */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    /* Footer padding */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .col-md-6 {
         margin-bottom: 20px;
+        /* Spacing for small screens */
     }
+}
+
+.property-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.property-card:hover {
+    transform: scale(1.05);
+}
+
+.property-buttons {
+    display: none;
+    /* Initially hide buttons */
+}
+
+.property-card:hover .property-buttons {
+    display: flex;
+    /* Show buttons on hover */
+    justify-content: center;
+    gap: 10px;
 }
