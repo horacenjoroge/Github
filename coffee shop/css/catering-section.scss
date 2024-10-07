@@ -1,0 +1,28 @@
+/* Custom styles */
+.hero {
+    background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.feature-card {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonials {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}

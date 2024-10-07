@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #8B2635;
+}
+
+.menu-title {
+    color: var(--primary-color);
+}
+
+.category-btn {
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.category-btn:hover {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+.menu-item {
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.action-buttons {
+    display: none;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.menu-item:hover .action-buttons {
+    display: flex;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #6d1d29;
+    border-color: #6d1d29;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Optional: Offset anchor scrolling to account for fixed header */
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Style for the sticky navigation */
+.sticky-top {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1020;
+}

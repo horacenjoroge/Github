@@ -1,0 +1,67 @@
+* contact-styles.css */:root {
+    --primary-color: #8B2635;
+    --primary-color-dark: #6d1d29;
+}
+
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.section-title {
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+
+/* Contact Information Styles */
+.contact-info-item {
+    margin-bottom: 30px;
+}
+
+.contact-info-item i {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.contact-image {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Form Styles */
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(139, 38, 53, 0.25);
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-color-dark);
+    border-color: var(--primary-color-dark);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-section {
+        padding: 40px 0;
+    }
+}
